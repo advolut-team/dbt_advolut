@@ -27,6 +27,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
+vars: # must add
+    shopify_database: dev
+    shopify_schema: uncovered_lawgiver # overrides schema field in profiles.yml
+
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
@@ -34,5 +38,6 @@ models:
   dbt_tutorial:
     # Config indicated by + and applies to all files under models/example/
     example:
+      +schema: final
       +materialized: view
 
