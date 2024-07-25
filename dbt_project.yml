@@ -29,7 +29,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars: # must add
     shopify_database: dev
-    shopify_schema: "{{ env_var('DBT_SCHEMA_NAME') }}" # overrides schema field in profiles.yml
+    shopify_schema: test # overrides schema field in profiles.yml
 
 # In this example config, we tell dbt to build all models in the example/
 # directory as views. These settings can be overridden in the individual model

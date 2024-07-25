@@ -2,3 +2,5 @@
 target/
 dbt_packages/
 logs/
+
+!dbt_packages/shopify_source/models/src_shopify.yml
