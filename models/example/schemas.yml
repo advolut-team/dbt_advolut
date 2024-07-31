@@ -1,6 +1,12 @@
 
 version: 2
 
+sources:
+  - name: shopify
+    overrides: shopify_source
+
+    schema: "{{env_var('DBT_SCHEMA_NAME')}}"
+
 models:
   - name: final_customers
     description: "Final feature table for Shopify shop"
