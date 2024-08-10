@@ -1,4 +1,5 @@
-Welcome to your new dbt project!
+# dbt Transformation for advolut
+This repo has all the final tables for consumption
 
 ### Using the starter project
 
