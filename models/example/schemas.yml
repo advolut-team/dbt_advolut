@@ -5,7 +5,7 @@ sources:
   - name: shopify
     overrides: shopify_source
 
-    schema: "{{env_var('DBT_SCHEMA_NAME')}}"
+    schema: "{{env_var('DBT_SHOPIFY_SCHEMA_NAME')}}"
 
 models:
   - name: final_customers
